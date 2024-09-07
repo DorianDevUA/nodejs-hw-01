@@ -12,4 +12,4 @@ export const addOneContact = async () => {
   return fakeContact;
 };
 
-addOneContact();
+console.log(await addOneContact());

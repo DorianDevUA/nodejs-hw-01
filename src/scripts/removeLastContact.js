@@ -7,7 +7,7 @@ export const removeLastContact = async () => {
   const deletedContact = contacts.pop();
   writeContacts(contacts);
 
-  return deletedContact;
+  return deletedContact || null;
 };
 
 console.log(await removeLastContact());
